@@ -20,6 +20,10 @@ export class QuoteBodyComponent implements OnInit {
     'Inspirational', 'By doing your small thing, you are adding to the big things in this world', false, 0, 0),
   ]
 
+  toggleDetails(index) {
+    this.quotes[index].showDetail = !this.quotes[index].showDetail;
+  }
+
   constructor() { }
 
   ngOnInit(): void {

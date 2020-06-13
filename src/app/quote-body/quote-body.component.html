@@ -2,7 +2,7 @@
 <div class="row">
     <div class="colmb-8">
 <hr>
-    <div *ngFor='let quote of quotes'>
+    <div *ngFor='let quote of quotes, let i = index'>
     
         <div class="card">
             <div class="card-header">
@@ -13,7 +13,8 @@
                 <p>{{quote.quote}}.</p>
                 <footer class="blockquote-footer"><cite title="Source Title">{{quote.author}}</cite></footer>
               </blockquote>
-              <button class="btn btn-primary">Show me more</button>
+              <button (click)='toggleDetails(i)' class="btn btn-primary">Show me more</button>
+              <app-quote-detail *ngIf='quote.showDetail' [quote]='quote'></app-quote-detail>
             </div>
           </div>
     </div>
