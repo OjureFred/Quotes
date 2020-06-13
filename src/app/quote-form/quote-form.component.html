@@ -1,18 +1,24 @@
-<div class="container-fluid">
+<div class="container-fluid border-success">
     <h2 class="text-centre">Create a new Quote</h2>
     <hr>
-    <form action="">
+    <form (ngSubmit)='submitQuote' #quoteForm='ngForm'>
         <div class="form-group">
             <label for="quote">Quote</label>
-            <input type="text" required  class="form-control" id="quote">
+            <input type="text" required  class="form-control" id="quote" [(ngModel)]='newQuote.quote' name="quote" #quote='ngModel'>
+            <div [hidden]='quote.valid || quote.pristine' class="alert alert-danger">
+                <p>Quote is required</p>
+            </div>
         </div>
         <div class="form-group">
             <label for="author">Author</label>
-            <input type="text" required  size="50" class="form-control" id="author">
+            <input type="text" required  size="50" class="form-control" id="author" [(ngModel)]='newQuote.author' name="author" #author='ngModel'>
+            <div [hidden]='author.valid || author.pristine' class="alert alert-danger">
+                <p>Author is required</p>
+            </div>
         </div>
         <div class="form-group">
             <label for="category">Category</label>
-            <select id="category" required class="form-control" name="category" id="category">
+            <select id="category" required class="form-control" name="category" id="category" [(ngModel)]='newQuote.category' name='category' #category='ngModel'>
                 <option value="brainy">Brainy</option>
                 <option value="motivation">Motivational</option>
                 <option value="life">Life</option>
@@ -21,10 +27,17 @@
                 <option value="thoughtful">Thoughtful</option>
                 <option value="confidence">Confidence</option>
               </select> 
+              <div [hidden]='category.valid || category.pristine' class="alert alert-danger">
+                <p>Select Category</p>
+            </div>
         </div>
         <div class="form-group">
             <label for="significance">Significance</label>
-            <textarea id="significance" required class="form-control" placeholder="Describe significance of the quote here..."></textarea> 
+            <textarea id="significance" required class="form-control" placeholder="Describe significance of the quote here..." [(ngModel)]='newQuote.significance' name="significance" #significance='ngModel'></textarea> 
+            <div [hidden]='significance.valid || significance.pristine' class="alert alert-danger">
+                <p>Significance is required</p>
+            </div>
         </div>
+        <button type="submit" class="btn btn-success">Add this Quote</button>
     </form>
 </div>

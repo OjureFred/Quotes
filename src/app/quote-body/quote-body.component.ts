@@ -24,6 +24,12 @@ export class QuoteBodyComponent implements OnInit {
     this.quotes[index].showDetail = !this.quotes[index].showDetail;
   }
 
+  addNewQuote(quote) {
+    let quoteLength = this.quotes.length;
+    quote.id = quoteLength + 1;
+    this.quotes.push(quote);
+  }
+
   constructor() { }
 
   ngOnInit(): void {
