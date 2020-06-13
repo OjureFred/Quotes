@@ -1,10 +1,20 @@
 # Quotes
 
+Quotes angular Project was developed at Moringa school coding classes to further understanding of Angular.
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.7.
+The application has hard coded a number of quotes as a start. Users are allowed to add and remove quotes to suit their preferences.
+Users can also like, upvote or downvote quotes to express their reaction to a quote.
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+The following technology has been used to develop this application:
+
+1. Node JS ver 14.X
+2. Angular ver 9
+3. Bootstrap ver 4
+4. Fontawesome
+
+To improve on the application, clone to your local machine and run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 ## Code scaffolding
 
