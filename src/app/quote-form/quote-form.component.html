@@ -1,1 +1,30 @@
-<p>quote-form works!</p>
+<div class="container-fluid">
+    <h2 class="text-centre">Create a new Quote</h2>
+    <hr>
+    <form action="">
+        <div class="form-group">
+            <label for="quote">Quote</label>
+            <input type="text" required  class="form-control" id="quote">
+        </div>
+        <div class="form-group">
+            <label for="author">Author</label>
+            <input type="text" required  size="50" class="form-control" id="author">
+        </div>
+        <div class="form-group">
+            <label for="category">Category</label>
+            <select id="category" required class="form-control" name="category" id="category">
+                <option value="brainy">Brainy</option>
+                <option value="motivation">Motivational</option>
+                <option value="life">Life</option>
+                <option value="success">Success</option>
+                <option value="wisdom">Wisdom</option>
+                <option value="thoughtful">Thoughtful</option>
+                <option value="confidence">Confidence</option>
+              </select> 
+        </div>
+        <div class="form-group">
+            <label for="significance">Significance</label>
+            <textarea id="significance" required class="form-control" placeholder="Describe significance of the quote here..."></textarea> 
+        </div>
+    </form>
+</div>

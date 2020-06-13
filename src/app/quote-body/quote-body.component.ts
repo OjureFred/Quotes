@@ -10,7 +10,7 @@ export class QuoteBodyComponent implements OnInit {
 
   title = 'Quotes';
   quotes: Quote[] = [
-    new Quote(1, 'When you say YES to other make sure you are not saying NO to yourself', 'Paul Coelho',
+    new Quote(1, 'When you say YES to others make sure you are not saying NO to yourself', 'Paul Coelho',
     'Self Awareness', 'One should not always bend over bakwards to please others. First please yourself', false, 0, 0),
     new Quote(2, 'If you really want to catch your dream, you have to chase it', 'Unknown',
     'Inspirational', 'You can achieve anything if you dream of it. But you have to work hard for it to become true', false, 0, 0),
