@@ -30,6 +30,18 @@ export class QuoteBodyComponent implements OnInit {
     this.quotes.push(quote);
   }
 
+  completeQuote(isComplete, index) {
+    if (isComplete) {
+      this.quotes.splice(index, 1);
+    }
+  }
+
+  upVoteQuote(upVote, index) {
+    if (upVote) {
+      this.quotes[index].upvote += 1;
+    }
+  }
+
   constructor() { }
 
   ngOnInit(): void {

@@ -14,7 +14,7 @@
                 <footer class="blockquote-footer"><cite title="Source Title">{{quote.author}}</cite></footer>
               </blockquote>
               <button (click)='toggleDetails(i)' class="btn btn-primary">Show me more</button>
-              <app-quote-detail *ngIf='quote.showDetail' [quote]='quote'></app-quote-detail>
+              <app-quote-detail *ngIf='quote.showDetail' [quote]='quote' (isComplete)='completeQuote($event, i)'(upVote)='upVoteQuote($event, i)'></app-quote-detail>
             </div>
           </div>
     </div>
