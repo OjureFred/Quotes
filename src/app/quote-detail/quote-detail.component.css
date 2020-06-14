@@ -1,0 +1,11 @@
+.quote-details {
+    color: blue;
+    font-size: x-large;
+    background-color: bisque;
+    padding: 5px;
+}
+
+.quote-react {
+    font-style: italic;
+    font-size: medium;
+}
