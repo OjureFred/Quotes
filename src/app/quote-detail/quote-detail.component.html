@@ -1,2 +1,8 @@
 <p>{{quote.category}}</p>
 <p>{{quote.significance}}</p>
+<br>
+<p>React to Quote</p>
+<button class="btn btn-primary">Up Vote :<i class="fa fa-thumbs-o-up"></i></button> {{quote.upvote}}
+<button class="btn btn-primary">Down Vote : <i class="fa fa-thumbs-o-down"></i></button> {{quote.downvote}}   
+<button class="btn btn-primary">Like : <i class="fa fa-heart-o"></i></button>
+<button (click)='quoteDelete' class="btn btn-primary">Delete : <i class="fa fa-trash-o"></i></button>
