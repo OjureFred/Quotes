@@ -6,8 +6,8 @@
 <div class="quote-react">
 <br>
 <p>React to Quote</p>
-<button (click)='quoteVoteUp(true)' class="btn btn-primary">Up Vote :<i class="fa fa-thumbs-o-up"></i></button> {{quote.upvote}}
-<button (click)='quoteVoteDown(true)' class="btn btn-primary">Down Vote : <i class="fa fa-thumbs-o-down"></i></button> {{quote.downvote}}   
-<button (click)='quoteDelete(true)' class="btn btn-primary">Delete : <i class="fa fa-trash-o"></i></button>
+<button type="button" (click)='quoteVoteUp()' class="btn btn-primary">Up Vote :<i class="fa fa-thumbs-o-up"></i></button> {{quote.upvote}}
+<button type="button" (click)='quoteVoteDown()' class="btn btn-primary">Down Vote : <i class="fa fa-thumbs-o-down"></i></button> {{quote.downvote}}   
+<button type="button"  (click)='quoteDelete(true)' class="btn btn-primary">Delete : <i class="fa fa-trash-o"></i></button>
 </div>
 </div>

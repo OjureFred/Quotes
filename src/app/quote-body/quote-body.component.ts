@@ -36,23 +36,6 @@ export class QuoteBodyComponent implements OnInit {
     }
   }
 
-  upVoteQuote(upVote, index) {
-    if (upVote) {
-      this.quotes[index].upvote += 1;
-    }
-  }
-
-  downVoteQuote(downVote, index) {
-    let zeroVotes = this.quotes[index].downvote = 0;
-    if (downVote) {
-      if (zeroVotes) {
-        this.quotes[index].downvote = 0;
-      } else {
-        this.quotes[index].downvote += 1;
-      }
-    }
-  }
-
   constructor() { }
 
   ngOnInit(): void {
