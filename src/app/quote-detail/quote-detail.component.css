@@ -1,3 +1,8 @@
+p {
+    font-size: 20px;
+    font-style: italic;
+    color: cadetblue;
+}
 .quote-details {
     color: blue;
     font-size: x-large;
